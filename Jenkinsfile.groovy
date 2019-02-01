@@ -4,7 +4,7 @@ stage('Publish Robot results') {
           step(
             [
               $class              : 'RobotPublisher',
-              outputPath          : '.',
+              outputPath          : 'https://github.com/serishma/Robo2.git',
               outputFileName      : "output.xml",
               reportFileName      : 'report.html',
               logFileName         : 'log.html',
